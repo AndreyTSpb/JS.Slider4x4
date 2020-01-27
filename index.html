@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <div class="row">
+            <div class="col-6 pt-5 pb-5" id="slider4x4">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- ADD SLIDER4x4-->
+    <script src="js/slider_4x4.js"></script>
+    <script>
+        /**
+         * Параметры для слайдера
+         * идентификатор, стили , ссылка на паку с картнками и перечень картинок
+         */
+        let params = {
+                idSlider:"slider4x4", // идентификатор слайдера на странице
+                sec:5, //Интервал для перелистывания слайдера
+                indexShow:1, //Стартовая картинка
+                col: 2, // количество слайдов по горизонтали
+                row: 2, //Количество лайдов по вертикали
+
+                /*PARAMS CSS*/
+                classDivBody:"row",
+                classDivImgs:["col-6", "text-center", "pb-4", "pt-4"],
+                
+                /* IMGS */
+                img_class: "rounded",
+                img_folder:"imgs", // folders with images files
+                imgs_name:['1.jpg','2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg','7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg','16.jpg'], // array with name files
+                img_width: "200px",
+                img_height: "200px"
+        }; 
+
+        slider4x4(params);
+    </script>
+  </body>
+</html>
